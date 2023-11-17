@@ -1,0 +1,399 @@
+html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+}
+
+body {
+      font-family: "Helvetica Neue",sans-serif;
+      font-weight: lighter;
+}
+
+header {
+      width: 100%;
+      height: 600px;
+      background: url(https://hdwallpaperfx.com/wp-content/uploads/2015/10/Alone-Girl-Wallpaper.jpg) no-repeat 50% 50%;
+      background-size: cover;
+}
+
+.content {
+      width: 94%;
+      margin: 4em auto;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: justify;
+}
+
+.logo {
+      line-height: 60px;
+      position: fixed;
+      float: left;
+      margin: 16px 46px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 20px;
+      letter-spacing: 2px;
+}
+
+nav {
+      position: fixed;
+      width: 100%;
+      line-height: 60px;
+}
+
+nav ul {
+      line-height: 60px;
+      list-style: none;
+      background: rgba(0, 0, 0, 0);
+      overflow: hidden;
+      color: #fff;
+      padding: 0;
+      text-align: right;
+      margin: 0;
+      padding-right: 40px;
+      transition: 1s;
+}
+
+nav.black ul {
+      background: #000;
+}
+
+nav ul li {
+      display: inline-block;
+      padding: 16px 40px;;
+}
+
+nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+}
+nav ul li a:hover{
+      color:#373851;
+}
+.menu-icon {
+      line-height: 60px;
+      width: 100%;
+      background: #000;
+      text-align: right;
+      box-sizing: border-box;
+      padding: 15px 24px;
+      cursor: pointer;
+      color: #fff;
+      display: none;
+}
+
+@media(max-width: 786px) {
+
+      .logo {
+            position: fixed;
+            top: 0;
+            margin-top: 16px;
+      }
+
+      nav ul {
+            max-height: 0px;
+            background: #000;
+      }
+
+      nav.black ul {
+            background: #000;
+      }
+
+      .showing {
+            max-height: 34em;
+      }
+
+      nav ul li {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 24px;
+            text-align: center;
+      }
+
+      .menu-icon {
+            display: block;
+      }
+
+}
+
+
+.slogan{
+text-align: center;
+      padding:20px;
+     
+}
+
+.slogan h1{
+       font-size:50px;
+ 
+}
+
+.slogan p{
+      font-size: 22px;
+}
+
+.mainimage{
+      margin-top:10px;
+      
+      display: block;
+      text-align: center;
+}
+
+.mainimage img{
+height:300px;
+      width:600px;
+      border-radius: 200px;
+      margin-bottom:15px;
+}
+
+.footer{
+      padding:10px;
+      background: #000000;
+}
+
+.footer h1{
+text-align: center;
+      margin-top:40px;
+      color:white;
+      
+
+}
+
+.footer a{
+      color:white;
+      text-decoration:none;
+}
+
+.footer a:hover{
+      color:#FBEC5E;
+}
+
+
+/*about section */
+.about{
+background:#8C43FF;
+}
+
+.text{
+text-align: center;
+      padding:60px;
+}
+
+.text h1{
+font-size: 35px;
+      padding:10px;
+}
+
+.text p{
+      font-size: 22px;
+}
+
+.system{
+text-align: center;
+      margin-top:20px;
+      display: block;
+}
+
+.system img{
+      height:500px;
+      width:1000px;
+      display: inline-block;
+}
+
+.fontend{
+     background: #fff;
+      padding:20px;
+      text-align:center;
+}
+
+.fontend h1{
+      font-size: 30px;
+}
+
+.fontend p{
+      font-size:18px;
+}
+
+.img{
+color:#C6A1FF;
+      font-size:35px;
+}
+
+.skill{
+padding:10px;
+}
+
+.skill p{
+      font-size:22px;
+}
+
+
+/* Portfolio */
+
+/* Responsive placing of the boxes*/
+.container {
+            padding: 1% 1% 0% 1%;
+            background: black;
+}
+.container:after {
+            content: '';
+            display: inline-block;
+            width: 100%;
+}
+
+/* Inside the box */
+
+.box {
+            width: 96%;
+            margin:2%;
+            padding-bottom: 96%;
+            height: 0;
+            position: relative;
+            float: left;
+            cursor: pointer;
+            overflow: hidden;
+/*          box-shadow: 0px 3px 18px 1px #fff;*/
+            
+}
+
+.box:after {
+            content: '';
+            position: absolute;
+            background-color: #000;
+            opacity:0;
+            z-index: 55;
+            width: 100%;
+            height: 100%;
+            -webkit-transition: all .15s ease-out;
+            -moz-transition: all .15s ease-out;
+            -ms-transition: all .15s ease-out;
+            -o-transition: all .15s ease-out;
+            transition: all .15s ease-out;
+}
+
+.box:hover::after {
+            background-color: #000;
+            opacity:.7;
+}
+
+.container .box .caption {
+            position: absolute;
+            z-index: 60;
+            width: 90%;
+            margin-left: 5%;
+            top: 50%;
+            -webkit-transform: scale(3);
+            -moz-transform: scale(3);
+            -ms-transform: scale(3);
+            -o-transform: scale(3);
+            transform: scale(3);
+            text-align: center;
+            -webkit-transition: all .15s ease-out;
+            -moz-transition: all .15s ease-out;
+            -ms-transition: all .15s ease-out;
+            -o-transition: all .15s ease-out;
+            transition: all .15s ease-out;
+            font: 1.4em normal Arial, sans-serif;
+            color: #fff;
+            opacity: 0;
+}
+
+.box:hover .caption {
+            -webkit-transform: scale(1) translate(0%, -50%);
+            -moz-transform: scale(1) translate(0%, -50%);
+            -ms-transform: scale(1) translate(0%, -50%);
+            -o-transform: scale(1) translate(0%, -50%);
+            transform: scale(1) translate(0%, -50%);
+            opacity: 1;
+}
+
+.box img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            height: 100%;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            z-index: 50;
+            -webkit-transition: all .15s ease-out;
+            -moz-transition: all .15s ease-out;
+            -ms-transition: all .15s ease-out;
+            -o-transition: all .15s ease-out;
+            transition: all .15s ease-out;
+}
+
+.box:hover img {
+      height: 150%;
+}
+/* media changes, changing number of columns */
+
+@media all and (min-width: 350px){
+  .container .box{
+            width: 48%;
+            margin:1%;
+            padding-bottom:48%;
+      }
+}
+
+@media all and (min-width: 800px){
+  .container .box{
+            width: 31.3333%;
+            padding-bottom:30%;
+      }
+}
+@media all and (min-width: 1200px){
+  .container .box{
+            width: 23%;
+            padding-bottom:23%;
+      }
+}
+
+
+/* Contact*/
+
+.contact_us{
+    background: url("https://codepen.io/boomerang/Img/maps.jpg") no-repeat center center fixed;
+    -webkit-background: cover;
+    -moz-background: cover;
+    -o-background: cover;
+    background: cover;
+    min-height: 300px;
+    color: #FFF;
+    font-family: sans-serif;
+    
+}
+.contact_us .content{
+    background-color: rgba(2,2,2,.9);
+    padding: 30px;
+}
+.contact_us .content h4{
+    margin-bottom: 30px;
+}
+.contact_us .content .form-control {
+    background-color: rgba(82,78,78,.07);
+    color: #FFF;
+    border: none;
+    
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+.contact_us .content .form-control.active{
+  -webkit-transform: scale(1.1, 1.1);
+  -moztransform: scale(1.1, 1.1);
+  -o-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+.contact_us .content textarea{
+    height: 108px;
+    outline:none;
+}
+.contact_us .content .btn-danger {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}

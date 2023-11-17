@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>DEEPAK!!</title>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+
+<body>
+      <div class="wrapper">
+            <header>
+
+                  <nav>
+
+                        <div class="menu-icon">
+                              <i class="fa fa-bars fa-2x"></i>
+                        </div>
+
+                        <div class="logo">
+                              DEEPAK
+                        </div>
+
+                        <div class="menu">
+                              <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="portfolio.html">Portfolio</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                              </ul>
+                        </div>
+                  </nav>
+
+            </header>
+
+
+      </div>
+<!-- Start Body-->
+
+<div class="container">
+            <div class="box">
+                        <div class="caption">Project One</div>
+                        <img src="https://unsplash.it/700/500?random" />
+            </div>
+
+            <div class="box">
+                        <div class="caption">Project Two</div>
+                        <img src="https://unsplash.it/700/501?random" />
+            </div>
+
+            <div class="box">
+                        <div class="caption">Project Three</div>
+                        <img src="https://unsplash.it/400/502?random" />
+            </div>
+
+            <div class="box">
+                        <div class="caption">Project Four</div>
+                        <img src="https://unsplash.it/700/503?random" />
+            </div>
+      
+            <div class="box">
+                        <div class="caption">Project Five</div>
+                        <img src="https://unsplash.it/700/504?random" />
+            </div>
+            <div class="box">
+                        <div class="caption">Project Six</div>
+                        <img src="https://unsplash.it/700/505?random" />
+            </div>
+            <div class="box">
+                        <div class="caption">Project Seven</div>
+                        <img src="https://unsplash.it/700/506?random" />
+            </div>
+
+</div>
+
+<section class="footer clear">
+  
+  <h1>Design By <a href="https://web.facebook.com/dipu.jhtml">DEEPAK </a> </h1>
+
+
+
+</section>
+
+<!-- End Body-->
+      <script type="text/javascript">
+
+      // Menu-toggle button
+
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+
+
+      </script>
+
+
+</body>
+</html>

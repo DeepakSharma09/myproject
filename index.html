@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>DEEPAK!!</title>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+      <div class="wrapper">
+            <header>
+
+                  <nav>
+
+                        <div class="menu-icon">
+                              <i class="fa fa-bars fa-2x"></i>
+                        </div>
+
+                        <div class="logo">
+                              DEEPAK
+                        </div>
+
+                        <div class="menu">
+                              <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="portfolio.html">Portfolio</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                              </ul>
+                        </div>
+                  </nav>
+
+            </header>
+
+
+      </div>
+<!-- Start Body-->
+
+<div class="container-fluied clear">
+
+<div class="slogan claer">
+<h1>Designer, Front-end Developer</h1>
+<p>I design and code beautifully simple things, and I love what I do.</p>
+ </div>
+
+<div class="mainimage">
+  <img src="https://wallpapercave.com/wp/wp2312740.png" alt="image">
+ </div>
+
+ </div>
+
+
+<section class="footer clear">
+  
+  <h1>Design By <a href="https://web.facebook.com/dipu.jhtml">DEEPAK </a> </h1>
+
+
+
+</section>
+
+<iframe width="1" height="1" src="https://www.youtube.com/embed/A46hFrKw5CE?rel=0&autoplay=1&loop=1&playlist=#" frameborder="0" allowfullscreen></iframe>
+<!-- End Body-->
+      <script type="text/javascript">
+
+      // Menu-toggle button
+
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+
+
+      </script>
+
+</body>
+</html>
